@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/users/register" method="POST">
+        <input type="text" name="name" id="" placeholder="enter name"> <br><br>
+        <input type="text" name="email" id="" placeholder="enter email"><br><br>
+        <input type="password" name="password" id="" placeholder="enter password"><br><br>
+        <% if(wrongPassword){ %>
+            <p><%=wrongPassword%></p>
+        <% } %>
+        
+         <button type="submit">Registration</button>
+    </form>
+</body>
+</html>
